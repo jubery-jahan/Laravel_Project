@@ -31,21 +31,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row mb-3">
-                                                        <label class="col-md-3">Category Description</label>
-                                                        <div class="col-md-9">
-                                                            <textarea  class="form-control" name="description" placeholder="Category Descrption" >{{$category->description}}</textarea>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row mb-3">
-                                                        <label class="col-md-3">Category Image</label>
-                                                        <div class="col-md-9">
-                                                            <input type="file" value="" class="form-control-file" name="image" />
-                                                            <img src="{{asset($category->image)}}" height="100" width="120">
-                                                        </div>
-                                                    </div>
-
+                                    
                                                     <div class="row mb-3">
                                                         <label class="col-md-3">Publication Staus</label>
                                                         <div class="col-md-9">
