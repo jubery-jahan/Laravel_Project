@@ -20,24 +20,23 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>SL</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
-                                    <th>Image</th>
-                                    <th>Description</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th class="text-center">SL</th>
+                                    <th class="text-center">Title</th>
+                                    <th class="text-center">Image</th>
+                                    <th class="text-center">Description</th>
+                                    <th class="text-center">Status</th>
+                                    <th class="text-center">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($blogs as $blog)
                                     <tr>
-                                        <td>{{$loop->iteration}}</td>
-                                        <td>{{$blog->title}}</td>
-                                        <td><img src="{{asset($blog->image)}}" height="50" width="70" alt=""/></td>
+                                        <td class="text-center">{{$loop->iteration}}</td>
+                                        <td class="text-center">{{$blog->title}}</td>
+                                        <td class="text-center"><img src="{{asset($blog->image)}}" height="50" width="70" alt=""/></td>
                                         <td>{{$blog->description}}</td>
-                                        <td>{{$blog->status == 1 ? 'Published' : 'Unpublished'}}</td>
-                                        <td>
+                                        <td class="text-center">{{$blog->status == 1 ? 'Published' : 'Unpublished'}}</td>
+                                        <td class="text-center">
                                             <a href="{{route('blog.edit',['id'=>$blog->id])}}" class="btn btn-success btn-sm">
                                                 <i class="fa fa-edit"></i>
                                             </a>
