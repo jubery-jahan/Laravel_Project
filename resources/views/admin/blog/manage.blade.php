@@ -41,7 +41,7 @@
                                             <a href="{{route('blog.edit',['id'=>$blog->id])}}" class="btn btn-success btn-sm">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a href="{{route('blog.delete',['id'=>$blog->id])}}" onclick="return confirm('Are you sure?')" class="btn btn-ganger btn-sm">
+                                            <a href="{{route('blog.delete',['id'=>$blog->id])}}" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">
                                                 <i class="fa fa-trash"></i>
                                             </a>
                                         </td>
