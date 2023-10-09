@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="pt-5">
-                        <p>Categories:  <a href="#">{{$blog->category->name}}</a>, <a href="#">Travel</a>  Tags: <a href="#">#manila</a>, <a href="#">#asia</a></p>
+                        <p>Categories:  <a href="#">{{$blog->category->name}}</a></p>
                     </div>
 
                     <div class="pt-5 comment-wrap">
